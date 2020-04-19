@@ -23,3 +23,15 @@ header {
 title {
   color: rgb(34, 206, 11);
 }
+p {
+  color: rgb(34, 206, 11);
+}
+
+h1 {
+  color: rgb(34, 206, 11);
+}
+
+#startBtn {
+  color: rgb(120, 190, 15);
+  /* background-color: rgb(120, 190, 15); */
+}

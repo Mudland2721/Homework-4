@@ -1,32 +1,44 @@
-var questions = [
-  //make an array with each item in it will hold a question, then the questions, and the right awnser
+var questionIndex = 0;
+var startBtn = document.querySelector("startBtn");
+// var optionA = document.querySelector("#optionA");
+// var optionB = document.querySelector("#optionB");
+// var optionC = document.querySelector("#optionC");
+// var optionD = document.querySelector("#optionD");
+var submit = document.querySelector("submit");
+var counter = document.querySelector("counter");
 
-  new questions(
-    "What is the best shooter game?",
-    ["COD", "CSGO", "Halo", "DOOM"],
-    "DOOM"
-  ),
+// function startQuiz() {
+//   var currentQuestion = questions[questionIndex];
+//   var title = document.querySelector("questions");
+//   title.textContent = currentQuestion.question;
 
-  new questions(
-    "Whats the best fighting game?",
-    ["Super Smash Bros", "MK9", "Injustice", "Soul Caliber"],
-    "Super Smash Bros"
-  ),
+//   getQuestion();
+// }
+// console.log(questions);
 
-  new questions(
-    "Whats the best horror game?",
-    ["Resident Evil", "Silent Hill", "Out Last", "5 Nights At Freddies"],
-    "Resident Evil"
-  ),
+function getQuestion() {
+  var currentQuestion = quizQuestions[questionIndex].question;
+  var title = document.querySelector("#questions");
+  title.textContent = currentQuestion;
+  var currentChoices = quizQuestions[questionIndex].choices;
+  var answers = document.querySelector("#optionA #optionB #optionC #optionD");
 
-  new questions(
-    "What the best RPG?",
-    ["Witcher", "Skyrim", "Destiny 2", "Fallout"],
-    "Skyrim"
-  ),
-];
+  //trying to do the same thing with the options but with no luck need to render them to the boxes
+  currentChoices.textContent = answers;
 
-function buttonLogic() {
-  if (condition) {
-  }
+  // var options = document.querySelector("buttons");
+  // options.textContent = quizQuestions.choices;
 }
+getQuestion();
+
+// function getQuestion() {
+//   var currentQuestion = quizQuestions[questionIndex];
+//   title.textContent = currentQuestion;
+
+//   getQuestion();
+// }
+
+//loop to keep track of question index
+// for (let i = 0; i < quizQuestions.length; i++) {
+//   questionIndex = array[i];
+// }

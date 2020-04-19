@@ -3,17 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="tittle">
-      <h1>Pop Quiz</h1>
-      <p>Lets check to see how well you do!</p>
-      <button>
-        <a href="questions.html" class="btn btn-primary">Start</a>
-      </button>
+    <!--Needs el for the tittle for each question-->
+    <!-- 4 buttons -->
+    <!-- submit -->
+    <div class="container">
+      <div id="questionBox">
+        <header>Quiz Time!</header>
+        <p id="questions">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+          dignissimos repellendus, et temporibus reprehenderit itaque molestias
+          ipsum sit eum repudiandae. Laboriosam a ad tempore adipisci quasi
+          ullam, doloremque veniam animi!
+        </p>
+        <div class="buttons">
+          <button id="optionA"></button>
+          <button id="optionB"></button>
+          <button id="optionC"></button>
+          <button id="optionD"></button>
+          <button id="submit">submit</button>
+        </div>
+
+        <footer>
+          <p id="counter"></p>
+        </footer>
+      </div>
     </div>
+
+    <script src="questions.js"></script>
+    <script src="apps.js"></script>
+    <!-- <script src="results.js"></script> -->
   </body>
 </html>
+<!-- // title.textContent = currentQuestion.question;
+// title.innerHTML = currentQuestion.questions.question;
+// optionA.innerHTML.querySelector("optionA");
+// startBtn.onclick = startQuiz; -->
