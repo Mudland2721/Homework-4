@@ -33,5 +33,7 @@ h1 {
 
 #startBtn {
   color: rgb(120, 190, 15);
-  /* background-color: rgb(120, 190, 15); */
+  background-color: rgb(120, 190, 15);
+  border-color: rgb(120, 190, 15);
+  caret-color: rgb(120, 190, 15);
 }

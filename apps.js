@@ -19,24 +19,27 @@ var counter = document.querySelector("counter");
 function getQuestion() {
   var currentQuestion = quizQuestions[questionIndex].question;
   var title = document.querySelector("#questions");
+  var answersA = document.querySelector("#optionA");
+  var answersB = document.querySelector("#optionB");
+  var answersC = document.querySelector("#optionC");
+  var answersD = document.querySelector("#optionD");
+  var currentChoices = quizQuestions[questionIndex].choices[questionIndex];
+  //populate question
   title.textContent = currentQuestion;
-  var currentChoices = quizQuestions[questionIndex].choices;
-  var answers = document.querySelector("#optionA #optionB #optionC #optionD");
+  //populate answers
+  answersA.textContent = currentChoices;
+  answersB.textContent = currentChoices;
+  answersC.textContent = currentChoices;
+  answersD.textContent = currentChoices;
 
-  //trying to do the same thing with the options but with no luck need to render them to the boxes
-  currentChoices.textContent = answers;
+  // console.log(quizQuestions.length);
 
-  // var options = document.querySelector("buttons");
-  // options.textContent = quizQuestions.choices;
+  for (let i = 0; i < quizQuestions.length; i++) {
+    questionIndex = array[i];
+  }
 }
+
 getQuestion();
-
-// function getQuestion() {
-//   var currentQuestion = quizQuestions[questionIndex];
-//   title.textContent = currentQuestion;
-
-//   getQuestion();
-// }
 
 //loop to keep track of question index
 // for (let i = 0; i < quizQuestions.length; i++) {
