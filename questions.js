@@ -32,30 +32,30 @@
 //   ),
 // ];
 
-var quizQuestions = [
-  {
-    question: "What is the best Shooter game?",
-    choices: ["COD", "CSGO", "Halo", "DOOM"],
-    answer: "DOOM",
-  },
-  {
-    question: "Whats the best horror game?",
-    choices: [
-      "Resident Evil",
-      "Silent Hill",
-      "Out Last",
-      "5 Nights At Freddies",
-    ],
-    answer: "Resident Evil",
-  },
-  {
-    question: "Whats the best fighting game?",
-    choices: ["Super Smash Bros", "MK9", "Injustice", "Soul Caliber"],
-    answer: "Super Smash Bros",
-  },
-  {
-    question: "What the best RPG?",
-    choices: ["Witcher", "Skyrim", "Destiny 2", "Fallout"],
-    answer: "Skyrim",
-  },
-];
+// var quizQuestions = [
+//   {
+//     question: "What is the best Shooter game?",
+//     choices: ["COD", "CSGO", "Halo", "DOOM"],
+//     answer: "DOOM",
+//   },
+//   {
+//     question: "Whats the best horror game?",
+//     choices: [
+//       "Resident Evil",
+//       "Silent Hill",
+//       "Out Last",
+//       "5 Nights At Freddies",
+//     ],
+//     answer: "Resident Evil",
+//   },
+//   {
+//     question: "Whats the best fighting game?",
+//     choices: ["Super Smash Bros", "MK9", "Injustice", "Soul Caliber"],
+//     answer: "Super Smash Bros",
+//   },
+//   {
+//     question: "What the best RPG?",
+//     choices: ["Witcher", "Skyrim", "Destiny 2", "Fallout"],
+//     answer: "Skyrim",
+//   },
+// ];
