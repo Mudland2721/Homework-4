@@ -31,7 +31,6 @@ var quizQuestions = [
 ];
 var questionIndex = 0;
 var startBtn = document.querySelector("startBtn");
-var submit = document.querySelector("submit");
 // var counter = document.querySelector("counter");
 var answersA = document.querySelector("#optionA");
 var answersB = document.querySelector("#optionB");
@@ -48,7 +47,7 @@ function startTimer() {
     displayTimer.textContent = timeRemaining;
 
     if (timeRemaining === 0) {
-      prompt("Game Over");
+      alert("Game Over");
     }
   }, 1000);
 }
@@ -64,7 +63,7 @@ function getQuestion() {
 
   title.textContent = currentQuestion;
   //populate answers
-  //first answer is what current choice yes
+  //first answer is what, current choice, yes
   answersA.textContent = currentChoices[0];
 
   answersB.textContent = currentChoices[1];
@@ -81,63 +80,54 @@ getQuestion();
 // call startTimer
 startTimer();
 
-// startBtn.addEventListener("click", function (event) {
-//   var click = event.target;
-//   if (click === true) {
-//     howMuch.textContent = time;
-//   }
-
-//   if (click === false) {
-//   }
-//   // console.log(click)
-// });
 answersA.addEventListener("click", function (event) {
-  var fu = event.target;
-  // console.log(fu.value);
   if (fu.value === quizQuestions[questionIndex].answer) {
     alert("YUP");
-
     //save the user input
+    // saveValue;
   }
   if (fu.value !== quizQuestions[questionIndex].answer) {
-    alert("You fucked up");
+    alert("Wrong");
+    // saveValue;
   }
   if (questionIndex !== quizQuestions.length - 1) {
     questionIndex++;
     getQuestion();
+    // saveValue;
   }
 });
 answersB.addEventListener("click", function (event) {
-  var fu = event.target;
-  // console.log(fu.value);
   if (fu.value === quizQuestions[questionIndex].answer) {
     alert("YUP");
-    //deduct time
-    //save the user input
+    // saveValue;
   }
   if (fu.value !== quizQuestions[questionIndex].answer) {
-    alert("You fucked up");
+    alert("Wrong");
+    // saveValue;
     timeRemaining--;
   }
   if (questionIndex !== quizQuestions.length - 1) {
     questionIndex++;
+    // saveValue;
     getQuestion();
   }
 });
 answersC.addEventListener("click", function (event) {
   var fu = event.target;
+  // var saveFu = localStorage.setItem("fu", )
   // console.log(fu.value);
   if (fu.value === quizQuestions[questionIndex].answer) {
     alert("YUP");
-    //deduct time
-    //save the user input
+    // saveValue;
   }
   if (fu.value !== quizQuestions[questionIndex].answer) {
-    alert("You fucked up");
+    alert("Wrong");
     timeRemaining--;
+    // saveValue;
   }
   if (questionIndex !== quizQuestions.length - 1) {
     questionIndex++;
+    // saveValue;
     getQuestion();
   }
 });
@@ -146,16 +136,21 @@ answersD.addEventListener("click", function (event) {
   // console.log(fu.value);
   if (fu.value === quizQuestions[questionIndex].answer) {
     alert("YUP");
-    //deduct time
-    //save the user input
+    // saveValue;
   }
   if (fu.value !== quizQuestions[questionIndex].answer) {
     alert("You fucked up");
     timeRemaining--;
+    // saveValue;
   }
   if (questionIndex !== quizQuestions.length - 1) {
     questionIndex++;
+    // saveValue;
     getQuestion();
   }
 });
-//todos
+
+// function for local storage
+// var fu = event.target;
+// var inputValue = fu.value;
+// var saveValue = localStorage.setItem("fu", inputValue);

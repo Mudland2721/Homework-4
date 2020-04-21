@@ -37,3 +37,7 @@ h1 {
   border-color: rgb(120, 190, 15);
   caret-color: rgb(120, 190, 15);
 }
+
+label {
+  color: rgb(120, 190, 15);
+}
